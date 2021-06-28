@@ -3,21 +3,20 @@
 ## requirement
 
 <strong>Hardware</strong>
-<ul>
-<li>Jetson nano</li>
-<li>RPLIDAR A1M8</li>
-<li>Arduino Mega 2560</li>
-<li>2 motor encoder [GA25-370](https://www.thegioiic.com/products/ga25-370-dong-co-giam-toc-co-encoder-12vdc-130-rpm-truc-4mm)</li>
-<li>L298N</li>
-<li>Usb wifi tp link archer T2U</li>
 
-</ul>
+* Jetson nano
+* RPLIDAR A1M8
+* Arduino Mega 2560
+* 2 motor encoder [GA25-370](https://www.thegioiic.com/products/ga25-370-dong-co-giam-toc-co-encoder-12vdc-130-rpm-truc-4mm)</li>
+* L298N</li>
+* Usb wifi tp link archer T2U
+
 
 <strong>Software</strong>
-<ul>
-<li>jetpack [4.5.1 or 32.3.1](https://developer.nvidia.com/embedded/jetpack)[nanodet-t.yml](config/Transformer/nanodet-t.yml)</li>
-<li>[ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)</li>
-</ul>
+
+* jetpack [4.5.1 or 32.3.1](https://developer.nvidia.com/embedded/jetpack)[nanodet-t.yml](config/Transformer/nanodet-t.yml)
+* [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
+
 
 ## INSTALL rtl8812au usb wifi
 
