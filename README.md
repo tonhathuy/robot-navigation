@@ -42,10 +42,20 @@ sudo apt install ros-melodic-rviz
 sudo apt-get install ros-melodic-move-base
 sudo apt-get install ros-melodic-dwa-local-planner
 ```
-## build Nox 
+## Build Nox 
 ```bash
 mkdir -p catkin_ws/src
 cd catkin_ws/
 catkin_make
 source devel/setup.bash
+```
+## Test Navigation
+```bash
+ls -l /dev |grep ttyUSB
+sudo chmod 666 /dev/ttyUSB0
+sudo chmod 666 /dev/ttyACM0
+
+roslaunch nox nox_bringup.launch
+roslaunch nox nox_slam.launch
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
