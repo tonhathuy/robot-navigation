@@ -18,6 +18,7 @@
 <li>jetpack [4.5.1 or 32.3.1](https://developer.nvidia.com/embedded/jetpack)</li>
 <li>[ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)</li>
 </ul>
+
 ## INSTALL rtl8812au usb wifi
 
 ```bash
