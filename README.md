@@ -15,7 +15,7 @@
 
 <strong>Software</strong>
 <ul>
-<li>jetpack [4.5.1 or 32.3.1](https://developer.nvidia.com/embedded/jetpack)</li>
+<li>jetpack [4.5.1 or 32.3.1](https://developer.nvidia.com/embedded/jetpack)[nanodet-t.yml](config/Transformer/nanodet-t.yml)</li>
 <li>[ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)</li>
 </ul>
 
