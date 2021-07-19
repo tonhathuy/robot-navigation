@@ -1,4 +1,4 @@
-use_map_topic: false
+use_map_topic: True
 
 odom_frame_id: "odom"
 base_frame_id: "base_link"
