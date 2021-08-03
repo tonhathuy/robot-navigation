@@ -5,21 +5,7 @@
 ## requirement
 
 ## Tutorials
--requirement
-    <strong>Hardware</strong>
-
-        * Jetson nano
-        * RPLIDAR A1M8
-        * Arduino Mega 2560
-        * 2 motor encoder [GA25-370](https://www.thegioiic.com/products/ga25-370-dong-co-giam-toc-co-encoder-12vdc-130-rpm-truc-4mm)</li>
-        * L298N</li>
-        * Usb wifi tp link archer T2U
-
-
-    <strong>Software</strong>
-
-        * jetpack [4.5.1 or 32.3.1](https://developer.nvidia.com/embedded/jetpack)
-        * [ROS melodic](http://wiki.ros.org/melodic/Installation/Ubuntu)
+-Requirement
 -Installation
     - [Setup jenson nano image](./docs/Jetson_nano_image.md)
     - [Setup USB wifi](./docs/rtl8812au.md)
