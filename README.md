@@ -1,11 +1,21 @@
 # robot-navigation
 
 ## Introduction
+This project is... .A self-navigating robot for .... We build a robot in ROS and integrate several functions: self-navigation, face detection and tracking
+## Recent updates
 
-## requirement
+## Overview of the project
+
+## Project flow (Demo)
+### 1.Navigation
+### 2.Face detection and tracking
+
+### 3.Logic flow
 
 ## Tutorials
 - Requirement
+    - [Hardware](./docs/hardware.md)
+    - [Software](./docs/software.md)
 - Installation
     - [Setup jenson nano image](./docs/Jetson_nano_image.md)
     - [Setup USB wifi](./docs/rtl8812au.md)
@@ -28,3 +38,4 @@ roslaunch nox nox_bringup.launch
 roslaunch nox nox_slam.launch
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
+## References
