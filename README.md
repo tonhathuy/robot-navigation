@@ -17,6 +17,12 @@ This project is... .A self-navigating robot for .... We build a robot in ROS and
 
 ### 3.Logic flow
 
+## To Do 
+- [ ] IMU MPU6050.
+- [ ] Auto charging.
+- [ ] Display for student.
+- [ ] More features in need.
+
 ## Tutorials
 - Requirement
     - [Hardware](./docs/hardware.md)
@@ -44,3 +50,4 @@ roslaunch nox nox_slam.launch
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 ## References
+- [Nox robot](https://github.com/RBinsonB/Nox_robot)
