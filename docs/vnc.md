@@ -24,6 +24,13 @@ sudo reboot
 ## Install VNC service for PC
 - [VNC Connect Viewer](https://www.realvnc.com/en/connect/download/viewer/linux/)
 
+## VNC Connecting to Jetson
+1.After nano login, you must enter your password to login before the remote service will start automatically
+2.View the nano's iP address
+```bash
+ifconfig
+```
+
 ## Change resolution display sharing VNC
 ```bash
 nano /etc/X11/xorg.conf 
@@ -44,3 +51,4 @@ Restart takes effect
 ```bash
 sudo reboot
 ```
+## Set static IP
