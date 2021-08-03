@@ -5,6 +5,11 @@ This project is... .A self-navigating robot for .... We build a robot in ROS and
 ## Recent updates
 
 ## Overview of the project
+<div align="center">
+    <img src="assets/robot1.jpg" width="800">
+    <img src="assets/robot2.jpg" width="800">
+    <img src="assets/robot3.jpg" width="800">
+</div>
 
 ## Project flow (Demo)
 ### 1.Navigation
