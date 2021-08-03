@@ -33,6 +33,7 @@ This project is... .A self-navigating robot for .... We build a robot in ROS and
     - [Setup USB wifi](./docs/rtl8812au.md)
     - [Setup Nox_ws](./docs/nox_ws.md)
     - [Setup Camera_ws](./docs/camera_ws.md)
+    - [VNC](./docs/vnc.md)
 ## Build Nox 
 ```bash
 mkdir -p catkin_ws/src
