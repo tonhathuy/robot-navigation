@@ -1,48 +1,46 @@
-# Nox ws 
+# VNC
 
-## INSTALL Nox
+## Install VNC jetson nano
+### 1.Enable the VNC server to start each time you log in
 ```bash
-sudo apt-get install ros-melodic-robot-state-publisher
-sudo apt-get install ros-melodic-joint-state-publisher-gui
-sudo -H apt-get install -y ros-melodic-teb-local-planner
-sudo apt install ros-melodic-rviz
-sudo apt-get install ros-melodic-move-base
-sudo apt-get install ros-melodic-dwa-local-planner
+cd /usr/lib/systemd/user/graphical-session.target.wants
+sudo ln -s ../vino-server.service ./.
 ```
-## Build Nox 
+### 2.Configure the VNC server
 ```bash
-mkdir -p catkin_ws/src
-cd catkin_ws/
-catkin_make
-source devel/setup.bash
+gsettings set org.gnome.Vino prompt-enabled false
+gsettings set org.gnome.Vino require-encryption false
 ```
-## Test Motor encoder and Rplidar
+### 3.Set a password to access the VNC server
 ```bash
-sudo chmod 666 /dev/ttyUSB0
-sudo chmod 666 /dev/ttyACM0
-
-roslaunch nox nox_bringup_with_rviz.launch
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+gsettings set org.gnome.Vino prompt-enabled false
+gsettings set org.gnome.Vino require-encryption false
 ```
-## Run Mapping and Navigation
+### 4.Reboot the system so that the settings take effect
 ```bash
-ls -l /dev |grep ttyUSB
-sudo chmod 666 /dev/ttyUSB0
-sudo chmod 666 /dev/ttyACM0
-
-roslaunch nox nox_bringup.launch
-roslaunch nox nox_slam.launch
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py
-```
-## Save Static Map
-```bash
-cd ./Nox_ws/src/nox/map && rosrun map_server map_saver -f map
+sudo reboot
 ```
 
-## Run Navigation with Static Map
+## Install VNC service for PC
+- [VNC Connect Viewer](https://www.realvnc.com/en/connect/download/viewer/linux/)
+
+## Change resolution display sharing VNC
 ```bash
-roslaunch nox nox_bringup.launch
-roslaunch nox nox_map_slam.launch
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+nano /etc/X11/xorg.conf 
 ```
-* Note: rename your Map name in nox_map_slam.launch
+Add at the bottom of the file
+```bash
+Section "Screen"
+   Identifier    "Default Screen"
+   Monitor       "Configured Monitor"
+   Device        "Tegra0"
+   SubSection "Display"
+       Depth    24
+       Virtual 1280 800 # Modify the resolution by editing these values
+   EndSubSection
+EndSection
+```
+Restart takes effect
+```bash
+sudo reboot
+```
