@@ -5,8 +5,8 @@
 ## requirement
 
 ## Tutorials
--Requirement
--Installation
+- Requirement
+- Installation
     - [Setup jenson nano image](./docs/Jetson_nano_image.md)
     - [Setup USB wifi](./docs/rtl8812au.md)
     - [Setup Nox_ws](./docs/nox_ws.md)
