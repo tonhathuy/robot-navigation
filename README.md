@@ -21,12 +21,13 @@ This project is... .A self-navigating robot for .... We build a robot in ROS and
 - [ ] IMU MPU6050.
 - [ ] Auto charging.
 - [ ] Display for student.
+- [ ] Build on docker.
 - [ ] More features in need.
 
 ## Tutorials
 - Requirement
-    - [Hardware](./assets/Hardware.md)
-    - [Software](./assets/Software.md)
+    - [Hardware](./assets/Hardware.png)
+    - [Software](./assets/Software.png)
 - Installation
     - [Setup jenson nano image](./docs/Jetson_nano_image.md)
     - [Setup USB wifi](./docs/rtl8812au.md)
