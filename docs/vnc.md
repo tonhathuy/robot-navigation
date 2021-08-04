@@ -51,4 +51,8 @@ Restart takes effect
 ```bash
 sudo reboot
 ```
+*note: if you want hot change, you can run:
+```bash
+xrandr --fb 1920x1080
+```
 ## Set static IP
