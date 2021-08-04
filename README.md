@@ -57,3 +57,4 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 - [rplidar](https://github.com/Slamtec/rplidar_ros)
 - [Gmapping](http://www.geduino.org/site/archives/35)
 - [PWM](http://arduino.vn/reference/xung-pwm)
+- [jetson nano image](https://github.com/Qengineering/Jetson-Nano-image)
