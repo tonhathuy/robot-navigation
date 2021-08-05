@@ -34,23 +34,13 @@ This project is... .A self-navigating robot for .... We build a robot in ROS and
     - [Setup Nox_ws](./docs/nox_ws.md)
     - [Setup Camera_ws](./docs/camera_ws.md)
     - [VNC](./docs/vnc.md)
-## Build Nox 
-```bash
-mkdir -p catkin_ws/src
-cd catkin_ws/
-catkin_make
-source devel/setup.bash
-```
-## Test Navigation
-```bash
-ls -l /dev |grep ttyUSB
-sudo chmod 666 /dev/ttyUSB0
-sudo chmod 666 /dev/ttyACM0
-
-roslaunch nox nox_bringup.launch
-roslaunch nox nox_slam.launch
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py
-```
+- Learn Config
+    - [arduino code for motor encoder](./docs/arduino.md)
+    - [basics of ROS](https://www.rosroboticslearning.com/basics-of-ros)
+    - [Mapping with SLAM - Lidar](./docs/slam.md)
+    - [Navigation task](./docs/navigation.md)
+    - [face detection task](./docs/face_detection.md)
+    
 ## References
 - [Nox robot](https://github.com/RBinsonB/Nox_robot)
 - [Really Useful Robot](https://github.com/XRobots/ReallyUsefulRobot)
