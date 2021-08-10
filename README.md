@@ -28,6 +28,7 @@ This project is... .A self-navigating robot for .... We build a robot in ROS and
 - Requirement
     - [Hardware](./assets/Hardware.png)
     - [Software](./assets/Software.png)
+    - [Connection_Diagram](./assets/Connection_Diagram.jpg)
 - Installation
     - [Setup jenson nano image](./docs/Jetson_nano_image.md)
     - [Setup USB wifi](./docs/rtl8812au.md)
