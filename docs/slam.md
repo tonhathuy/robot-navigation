@@ -1,14 +1,19 @@
-# Nox ws 
+# SLAM DOC
 
-## INSTALL Nox
-```bash
-sudo apt-get install ros-melodic-robot-state-publisher
-sudo apt-get install ros-melodic-joint-state-publisher-gui
-sudo -H apt-get install -y ros-melodic-teb-local-planner
-sudo apt install ros-melodic-rviz
-sudo apt-get install ros-melodic-move-base
-sudo apt-get install ros-melodic-dwa-local-planner
-```
+
+
+## 1. What is RPLIDAR ?
+
+RPLIDAR is a low-cost LIDAR sensor suitable for indoor robotic SLAM application. The produced 2D point cloud data can be used in mapping, localization and object/environment modeling. RPLIDAR will be a great tool using in the research of SLAM (Simultaneous localization and mapping).
+
+- RPLIDAR Application Scenarios:
++ Obstacle detection and avoidance
++ Environment scanning and 3D modeling
++ Multi-touch technology and man-machine interaction
++ Robot simultaneous localization and mapping
+
+
+
 ## Build Nox 
 ```bash
 mkdir -p catkin_ws/src
