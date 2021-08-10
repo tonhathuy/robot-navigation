@@ -11,10 +11,10 @@ This project is... .A self-navigating robot for .... We build a robot in ROS and
     <img src="assets/robot3.jpg" width="800">
 </div>
 
-## Project flow (Demo)
+## Project flow ([Demo](https://www.youtube.com/watch?v=1xq5AJjOA-k))
 ### 1.Navigation
 ### 2.Face detection and tracking
-
+<img src="https://github.com/tonhathuy/robot-navigation/blob/dev/assets/face_detec.gif" alt="">
 ### 3.Logic flow
 
 ## To Do 
