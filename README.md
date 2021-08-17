@@ -2,6 +2,8 @@
 
 ## requirement
 
+<img align="right" height=224 src="https://media1.tenor.com/images/01119418e1287777a0a88cf7166308bc/tenor.gif?itemid=9281996"/>
+
 <strong>Hardware</strong>
 
 * Jetson nano
