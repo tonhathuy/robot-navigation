@@ -65,12 +65,12 @@
 
 ![Map generted](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/MapsGenerated.png)
 
-- 2D lidar SLAM systems: Hector SLAM and Cartographer provide accurate solutions for UGV localization and map building. The methods provide almost the same results with RMSE of
+- 2D lidar SLAM systems: Hector SLAM and Cartographer provide accurate solutions for UGV localization and map building. The methods provide almost the same results with RMSE of
 Absolute Trajectory Error (ATE) at 0.024 m. Both trajectories coincide with the marked line on the floor. However, since Cartographer uses global map optimization cycle and local probabilistic map updates, it makes this system more robust to environmental changes.
 - Monocular visual SLAM systems: Parallel Tracking and Mappping (PTAM), Semi-direct Visual Odometry (SVO), Dense Piecewise Parallel Tracking and Mapping (DPPTAM) failed the experiments since they lost track due to lack of features.
 - Monocular visual SLAM systems: Large Scale Direct monocular SLAM (LSD SLAM), ORB SLAM, Direct Sparse Odometry (DSO) can be used for solving localization problem with an additional module for scale recovery.
 - No monocular SLAM system could handle scale ambiguity problem without additional information about environment for scale recovery.
-- Stereo visual SLAM systems: ZEDfu, Real-Time AppearanceBased Mapping (RTAB map), ORB SLAM, Stereo Parallel Tracking and Mapping (S-PTAM) provide metric information about localization without additional scaling modules, also building 3D metric point cloud.
+- Stereo visual SLAM systems: ZEDfu, Real-Time Appearance Based Mapping (RTAB map), ORB SLAM, Stereo Parallel Tracking and Mapping (S-PTAM) provide metric information about localization without additional scaling modules, also building 3D metric point cloud.
 - Visual SLAM system: RTAB map demonstrated the best results for localization problem in our experiments with RMSE ATE of 0.163 m, but it has the problem with the track lost close to
 monochrome walls. The most robust and stable between tested system is ORB SLAM with RMSE ATE of 0.190 m
 
