@@ -37,7 +37,7 @@
 |Cartographer |<ul><li> Best fit from 2D Lidar maps to the real environment</li><li>Can be use for tracking</li><li>Using global map optimization cycle and local probabilistic map updates</li></ul> | |
 
 <p align="center">
-  <img width="600" height="200" src="https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/2DLidar.png">
+  <img width="420" height="320" src="https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/2DLidar.png">
 </p>
 
 ## Monocular SLAM methods
@@ -51,7 +51,7 @@
 |DSO| <ul><li> Provide dense point cloud maps and allow to make 3D scene recovery and object detection</li><li> Create the best 3D dense map</li><li>Can be used for solving localization problem with an additional module for scale recovery</li></ul>| Lost the track when robot had a turn|
 
 <p align="center">
-  <img width="600" height="200" src="https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/Monocular.png">
+  <img width="420" height="320" src="https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/Monocular.png">
 </p>
 
 ## Stereo SLAM methods
@@ -64,13 +64,13 @@
 |S-PTAM| <ul><li>Robust in terms of pose tracking</li><li>Have the spare map</li></ul>| The localization accuracy can be not enough for robot navigation|
 
 <p align="center">
-  <img width="600" height="200" src="https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/Stereo.png">
+  <img width="420" height="320" src="https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/Stereo.png">
 </p>
 
 # Conclusion
 
 <p align="center">
-  <img width="600" height="200" src="https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/MapsGenerated.png">
+  <img width="420" height="320" src="https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/MapsGenerated.png">
 </p>
 
 - 2D lidar SLAM systems: Hector SLAM and Cartographer provide accurate solutions for UGV localization and map building. The methods provide almost the same results with RMSE of
@@ -83,5 +83,5 @@ Absolute Trajectory Error (ATE) at 0.024 m. Both trajectories coincide with the 
 monochrome walls. The most robust and stable between tested system is ORB SLAM with RMSE ATE of 0.190 m
 
 <p align="center">
-  <img width="600" height="200" src="https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/TrajectoryErrorBaseOnHector.png">
+  <img width="420" height="320" src="https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/TrajectoryErrorBaseOnHector.png">
 </p>
