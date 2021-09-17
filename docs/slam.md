@@ -1,12 +1,12 @@
 # List of contents
 
->- Introdution SLAM
->- Classification SLAM
->- Evaluation and Comparation
->   + Lidar SLAM methos
->   + Monocular SLAM methods
->   + Stereo SLAM methods
->- Conclusion
+>- [Introdution SLAM](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/slam.md#introdutions-slam)
+>- [Classification SLAM](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/slam.md#classification-methods)
+>- [Evaluation and Comparation](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/slam.md#evaluation-and-comparation)
+>   + [Lidar SLAM methos](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/slam.md#lidar-slam-methods)
+>   + [Monocular SLAM methods](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/slam.md#monocular-slam-methods)
+>   + [Stereo SLAM methods](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/slam.md#stereo-slam-methods)
+>- [Conclusion](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/slam.md#conclusion)
 
 # Introdutions SLAM
 
@@ -36,7 +36,7 @@
 |Hector SLAM |<ul><li>Can represent the real map of the environment</li><li>Best fit for tracking</li></ul> | |
 |Cartographer |<ul><li> Best fit from 2D Lidar maps to the real environment</li><li>Can be use for tracking</li><li>Using global map optimization cycle and local probabilistic map updates</li></ul> | |
 
-
+![2D SLAM methods](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/2DLidar.png)
 
 ## Monocular SLAM methods
 
@@ -48,7 +48,7 @@
 |ORB SLAM| <ul><li>Can solve navigation problems</li><li>Good enough for solving navigation problems</li></ul>| <ul><li>Lost the track when robot had a turn</li><li> Difficulties to make 3D scene recovery</li></ul>|
 |DSO| <ul><li> Provide dense point cloud maps and allow to make 3D scene recovery and object detection</li><li> Create the best 3D dense map</li><li>Can be used for solving localization problem with an additional module for scale recovery</li></ul>| Lost the track when robot had a turn|
 
-
+![Monocular SLAM methods](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/Monocular.png)
 
 ## Stereo SLAM methods
 
@@ -59,9 +59,11 @@
 |ORB SLAM| Create sparse 3D map| The trajectory is not accurate|
 |S-PTAM| <ul><li>Robust in terms of pose tracking</li><li>Have the spare map</li></ul>| The localization accuracy can be not enough for robot navigation|
 
-
+![Stereo SLAM methods](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/Stereo.png)
 
 # Conclusion
+
+![Map generted](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/MapsGenerated.png)
 
 - 2D lidar SLAM systems: Hector SLAM and Cartographer provide accurate solutions for UGV localization and map building. The methods provide almost the same results with RMSE of
 Absolute Trajectory Error (ATE) at 0.024 m. Both trajectories coincide with the marked line on the floor. However, since Cartographer uses global map optimization cycle and local probabilistic map updates, it makes this system more robust to environmental changes.
@@ -71,3 +73,5 @@ Absolute Trajectory Error (ATE) at 0.024 m. Both trajectories coincide with the 
 - Stereo visual SLAM systems: ZEDfu, Real-Time AppearanceBased Mapping (RTAB map), ORB SLAM, Stereo Parallel Tracking and Mapping (S-PTAM) provide metric information about localization without additional scaling modules, also building 3D metric point cloud.
 - Visual SLAM system: RTAB map demonstrated the best results for localization problem in our experiments with RMSE ATE of 0.163 m, but it has the problem with the track lost close to
 monochrome walls. The most robust and stable between tested system is ORB SLAM with RMSE ATE of 0.190 m
+
+![Trajectoruy error base on Hector](https://github.com/tonhathuy/robot-navigation/blob/dev/docs/img/SLAM/TrajectoryErrorBaseOnHector.png)
